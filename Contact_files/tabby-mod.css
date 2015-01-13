@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+Responsive Tabs (Tabby)
+--------------------------------------------------------------*/
+@media screen and (min-width: 768px) {
+
+    div.tabcontent[role="tabpanel"],
+    h2.tabtitle {
+	border: 0;
+    }
+
+    .responsive-tabs  ul.responsive-tabs__list {
+	display: table;
+	width: 100%;
+	margin: 10px 0 0 0;
+    }
+
+    .responsive-tabs__list > .responsive-tabs__list__item {
+	border: 0;
+	margin: 0 auto;
+	background: #007AC2;
+	padding: 15px 22px;
+	color: white;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	top: 0px;
+	display: table-cell;
+	float: none;
+	text-align: center;
+	font-size: large;
+    }
+
+    .responsive-tabs__list > .responsive-tabs__list__item:hover {
+	top: 0px;
+	color: black;
+	background: #007AC2;
+	padding-bottom: 15px;
+    }
+
+    .responsive-tabs__list > .responsive-tabs__list__item--active,
+    .responsive-tabs__list > .responsive-tabs__list__item--active:hover,
+    .responsive-tabs__list > .responsive-tabs__list__item:focus {
+	top: 0px;
+	background: #6d6e71;
+	color: white;
+	padding-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .responsive-tabs > h2.responsive-tabs__heading--active,
+    .responsive-tabs > h2.responsive-tabs__heading--active:hover,
+    .responsive-tabs > h2.responsive-tabs__heading:hover,
+    .responsive-tabs > h2.responsive-tabs__heading:focus {
+	background: #007AC2;
+	color: white;
+    }
+
+}
