@@ -40,8 +40,16 @@
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://viaembedded.staging.wpengine.com/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://viaembedded.staging.wpengine.com/wp-includes/wlwmanifest.xml"> 
 <link rel="shortlink" href="http://viaembedded.staging.wpengine.com/?p=546">
-<script src="./Contact_files/saved_resource" data-sumo-site-id="025f2a52a246166f78375db87fe0f732185fb492680a6856ccad09afa428cff6" async=""></script><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;WordPress&quot;:-1,&quot;jQuery&quot;:&quot;1.11.1&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="9e8a4d2a-6f8c-415e-851b-bdfe4c01d5c1/service" src="./Contact_files/service.js"></script><link type="text/css" rel="stylesheet" href="./Contact_files/sumome-share-client.css"></head>
+  </head>
 
+  <style>
+    .showRow {
+       display: table-row;
+    }
+    .hidden {
+       display: none;
+    }
+  </style>
 <body class="page page-id-546 page-child parent-pageid-36 page-template-default" cz-shortcut-listen="true">
 <div id="banner-row" class="full">
   <header class="main">
@@ -95,9 +103,6 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-<script src="./Contact_files/eBusiness.js"></script>
-<script src="./Contact_files/contact.js"></script>
-
 Whether you're a reseller looking for opportunities to sell our products or a consumer with any other questions or ideas, we want to hear from you!
 Please fill in the form below to contact us.
 
@@ -116,13 +121,13 @@ Please fill in the form below to contact us.
 			                    <td colspan="5">Write to us&nbsp;:&nbsp;</td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF" class="boxcontentNew">
-			                    <td width="17%" align="right" nowrap="nowrap"><font color="#ff0000">*</font>I need to contact a&nbsp;:&nbsp;</td>
+			                    <td width="17%" align="right" nowrap="nowrap" class="mandatory"><font color="#ff0000">*</font>I need to contact a&nbsp;:&nbsp;</td>
 			                    <td colspan="4">
 			                     
-			                          <input name="contactId" onclick="techInfo(!this.checked);" type="radio" value="1/Sales Contact">
+			                          <input name="contactId" type="radio" value="1/Sales Contact" checked>
 			                      Sales Contact&nbsp;
 			                      
-			                          <input name="contactId" onclick="techInfo(this.checked);" type="radio" value="2/Technician Contact">
+			                          <input name="contactId" type="radio" value="2/Technician Contact">
 			                      Technician Contact&nbsp;
 			                      
 			                    </td>
@@ -165,8 +170,8 @@ Please fill in the form below to contact us.
                         </tr>
                         <tr bgcolor="#FFFFFF">
                           <td align="right"><font color="#ff0000">*</font>Name&nbsp;:&nbsp;</td>
-                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>First Name&nbsp;&nbsp;<input type="text" class="sick-input" name="firstName" size="20" maxlength="30"></td>
-                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>Last Name&nbsp;&nbsp;<input type="text" class="sick-input" name="lastName" size="25" maxlength="30"></td>
+                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>First Name&nbsp;&nbsp;<input type="text" class="sick-input" id="firstName" name="firstName" size="20" maxlength="30"></td>
+                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>Last Name&nbsp;&nbsp;<input type="text" class="sick-input" id="lastName" name="lastName" size="25" maxlength="30"></td>
                         </tr>
 			                  <tr bgcolor="#FFFFFF">
 			                    <td align="right"><font color="#ff0000">*</font>Company Name&nbsp;:&nbsp;</td>
@@ -200,7 +205,7 @@ Please fill in the form below to contact us.
                         <tr bgcolor="#FFFFFF">
                           <td colspan="2" valign="middle" align="left">  
                               <font color="#ff0000">*</font>Country&nbsp;&nbsp;
-                              <select id="countryId" name="countryId" onchange="changeCountry()">
+                              <select id="countryId" name="countryId">
                                   <option value="-1" selected="">Please Select a Country</option>
                                 
                                   <option value="4/Albania">Albania</option>
@@ -548,9 +553,9 @@ Please fill in the form below to contact us.
                                   <option value="261/COCOS Islands">COCOS Islands</option>
                                 
                                 </select> 
-                                <span id="spaState" class="sectionHide">&nbsp;<font color="#ff0000">*</font>State&nbsp;:&nbsp; 
-                                <select id="stateId" name="stateId"></select> <input type="hidden" id="hidStateExistFlg" name="hidStateExistFlg">
-                                </span>
+
+<span id="spaState" class="sectionShow">
+</span>
                           </td>
                           
                         </tr>
@@ -558,9 +563,9 @@ Please fill in the form below to contact us.
 			                  <!-- For Sales Contact End Here -->
 			                  <!-- For Technical Contact Start Here -->
 			                  <tr bgcolor="#FFFFFF" id="showmbInfo">
-			                    <td align="right"><font color="#ff0000">*</font>I am Interested in which model :&nbsp;</td>
+			                    <td align="right"><font color="#ff0000">*</font>I am interested in this product or model :&nbsp;</td>
 			                    <td colspan="4">
-			                      <select id="mb" name="mb" onchange="changeProductModel()">
+			                      <select id="mb" name="mb">
 			                        <option value="-1" selected="selected">Please Select a Product</option>
 			                        
                               <option value="EPIA-M720/1590" style="background-color:#FFFDE5;">EPIA-M720</option>
@@ -840,8 +845,7 @@ Please fill in the form below to contact us.
                               <option value="vmpc vm7700 (EOL)/891" style="background-color:#EDEDED;">vmpc vm7700 (EOL)</option>
 			                        
 			                      </select> &nbsp;or fill in other&nbsp;:&nbsp;
-			                      <input type="text" class="sick-input" id="txtInProductModel" name="txtInProductModel" maxlength="200" onfocus="inputProductModelOther()"> <br>
-			                      <font color="red" size="1">Please note that if you cannot find your Board/System model listed above, you might have a Board/System that uses our VIA chipset but is not designed or manufactured by VIA.</font>
+			                      <input type="text" id="txtInProductModel" name="txtInProductModel" maxlength="200"> <br>
 			                    </td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF">
@@ -972,26 +976,26 @@ Please fill in the form below to contact us.
                               </tbody></table>
                           </td>
                         </tr>
-			                  <tr bgcolor="#FFFFFF" style="display: none" id="showBoughtFromInfo">
+			                  <tr bgcolor="#FFFFFF" class="hidden" id="showBoughtFromInfo">
 			                    <td align="right"><font color="#ff0000">*</font>I bought it from?&nbsp;:&nbsp;</td>
 			                    <td colspan="4">
 			                      <input type="text" class="sick-input" name="boughtFrom"><br>
 			                      <font color="red" size="1">Please specify a distributor or retailer or you might not buy it yet, please fill in "N/A".</font>
 			                    </td>
 			                  </tr>
-			                  <tr bgcolor="#FFFFFF" style="display: none" id="showcpuInfo">
+			                  <tr bgcolor="#FFFFFF" class="hidden" id="showcpuInfo">
 			                    <td align="right"><font color="#ff0000">*</font>CPU&nbsp;:&nbsp;</td>
 			                    <td colspan="4"><input type="text" class="sick-input" name="cpu"></td>
 			                  </tr>
-			                  <tr bgcolor="#FFFFFF" style="display: none" id="showosInfo">
+			                  <tr bgcolor="#FFFFFF" class="hidden" id="showosInfo">
 			                    <td align="right"><font color="#ff0000">*</font>OS&nbsp;:&nbsp;</td>
 			                    <td colspan="4"><input type="text" class="sick-input" name="os"></td>
 			                  </tr>
-			                  <tr bgcolor="#FFFFFF" style="display: none" id="showmemInfo">
+			                  <tr bgcolor="#FFFFFF" class="hidden" id="showmemInfo">
 			                    <td align="right"><font color="#ff0000">*</font>Memory&nbsp;:&nbsp;</td>
 			                    <td colspan="4">Brand&nbsp; <input type="text" class="sick-input" name="memBrand">&nbsp;&nbsp; Speed&nbsp; <input type="text" class="sick-input" name="memSpeed"></td>
 			                  </tr>
-			                  <tr bgcolor="#FFFFFF" style="display: none" id="showvideoInfo">
+			                  <tr bgcolor="#FFFFFF" class="hidden" id="showvideoInfo">
 			                    <td align="right"><font color="#ff0000">*</font>Video card&nbsp;:&nbsp;</td>
 			                    <td colspan="4"><input type="text" class="sick-input" name="video"></td>
 			                  </tr>
@@ -1005,8 +1009,8 @@ Please fill in the form below to contact us.
 			                  <tbody><tr align="center">
 			                    <td width="30"></td>
 			                    <td>
-			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="but1" onclick="javascript:checkData();" value="Submit">&nbsp; 
-			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="but2" onclick="javascript:document.form1.reset();" value="Clear"></td>
+			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="submit" value="Submit">&nbsp; 
+			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="reset" onclick="javascript:document.form1.reset();" value="Clear"></td>
 			                  </tr>
 			                </tbody></table>
                     </form>
