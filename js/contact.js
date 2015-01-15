@@ -100,7 +100,7 @@ VIA Embedded Contact Form
                 );
             });
 
-            target.append('* ' + areaInfo.title + ': ');
+            target.append('<label for="stateId">' + areaInfo.title + '<em>*</em></label><br>');
             target.append(newSelect);
             target.append('<input type="hidden" id="hidStateExistFlg" name="hidStateExistFlg" value="1">');
         };
@@ -121,8 +121,6 @@ VIA Embedded Contact Form
             conditionalchecked: {
                 fn: function (value, checkboxId) {
                     // if requirements[0] value does not meet requirements[1] expectation, field is required
-                    console.log("Checked");
-                    console.log($('#' + checkboxId + ':checked'));
                     if ($('#' + checkboxId + ':checked').length > 0 && '' === value) {
                         return false;
                     } else {

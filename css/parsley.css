@@ -1,3 +1,4 @@
+p.parsley-success,
 input.parsley-success,
 select.parsley-success,
 textarea.parsley-success {
@@ -6,6 +7,7 @@ textarea.parsley-success {
   border: 1px solid #D6E9C6;
 }
 
+p.parsley-error,
 input.parsley-error,
 select.parsley-error,
 textarea.parsley-error {
