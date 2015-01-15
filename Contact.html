@@ -40,6 +40,7 @@
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://viaembedded.staging.wpengine.com/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://viaembedded.staging.wpengine.com/wp-includes/wlwmanifest.xml"> 
 <link rel="shortlink" href="http://viaembedded.staging.wpengine.com/?p=546">
+<link rel="stylesheet" href="./css/parsley.css" type="text/css" media="all">
   </head>
 
   <style>
@@ -106,108 +107,78 @@
 Whether you're a reseller looking for opportunities to sell our products or a consumer with any other questions or ideas, we want to hear from you!
 Please fill in the form below to contact us.
 
-<form name="form1">
-			                <input type="hidden" name="real_message" value=""> 
-			                <input type="hidden" name="hidWays" value="">
-			                <input type="hidden" name="hidAppType" value="">
-			                <input id="userType" name="userType" type="hidden" value="8">
-			                <input id="txtUserType" name="txtUserType" type="hidden" value="N/A">
-			                <input id="appType" name="appType" type="hidden" value="11">
-			                <input id="txtAppType" name="txtAppType" type="hidden" value="N/A">
-			                <input id="productLine" name="productLine" type="hidden" value="2">
-			                <a name="vepdContact"></a>
-			                <table cellspacing="2" cellpadding="2" width="80%" align="center" border="0" class="table">
-			                  <tbody><tr class="headingcell">
-			                    <td colspan="5">Write to us&nbsp;:&nbsp;</td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF" class="boxcontentNew">
-			                    <td width="17%" align="right" nowrap="nowrap" class="mandatory"><font color="#ff0000">*</font>I need to contact a&nbsp;:&nbsp;</td>
-			                    <td colspan="4">
-			                     
-			                          <input name="contactId" type="radio" value="1/Sales Contact" checked>
-			                      Sales Contact&nbsp;
-			                      
-			                          <input name="contactId" type="radio" value="2/Technician Contact">
-			                      Technician Contact&nbsp;
-			                      
-			                    </td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF" class="boxcontentNew">
-                          <td width="17%" align="right" nowrap="nowrap"><font color="#ff0000">*</font>How to get<br>this website&nbsp;:&nbsp;</td>
-                          <td colspan="4">
-                           
-                                                        
-                                <input name="howToGetThisWebsite" type="radio" value="369" onclick="resetHowToGetThisWebsiteOther(this);">
-                                <a href="http://www.viaembedded.com/en/images/service/what%20is%20Adwords.jpg" target="blank">Google AdWords</a>&nbsp;
-                            
-                            
-                                                        
-                                <input name="howToGetThisWebsite" type="radio" value="367" onclick="resetHowToGetThisWebsiteOther(this);">
-                                Google Search&nbsp;
-                            
-                            
-                                                        
-                                <input name="howToGetThisWebsite" type="radio" value="371" onclick="resetHowToGetThisWebsiteOther(this);">
-                                Mte magazine&nbsp;
-                            
-                            
-                                  <br>
-                             
-                                                        
-                                <input name="howToGetThisWebsite" type="radio" value="926" onclick="resetHowToGetThisWebsiteOther(this);">
-                                eecatalog.com&nbsp;
-                            
-                            
-                                                        
-                                <input name="howToGetThisWebsite" type="radio" value="374" onclick="resetHowToGetThisWebsiteOther(this);">
-                                Others&nbsp;
-                            
-                            
-                            
-                                  <input name="howToGetThisWebsiteOther" id="howToGetThisWebsiteOther" onfocus="setHowToGetThisWebsiteOther()" class="sick-input" type="text" value="" maxlength="30" title="Maximum of 30 characters only">
-                            
-                          </td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                          <td align="right"><font color="#ff0000">*</font>Name&nbsp;:&nbsp;</td>
-                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>First Name&nbsp;&nbsp;<input type="text" class="sick-input" id="firstName" name="firstName" size="20" maxlength="30"></td>
-                          <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>Last Name&nbsp;&nbsp;<input type="text" class="sick-input" id="lastName" name="lastName" size="25" maxlength="30"></td>
-                        </tr>
-			                  <tr bgcolor="#FFFFFF">
-			                    <td align="right"><font color="#ff0000">*</font>Company Name&nbsp;:&nbsp;</td>
-			                    <td colspan="4">
-			                       <input type="text" class="sick-input" size="25" name="companyName" maxlength="50">
-			                        &nbsp;Department&nbsp;:&nbsp;<input type="text" class="sick-input" name="department" size="20" maxlength="100">
-			                    </td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF">
-			                    <td align="right"><font color="#ff0000">*</font>Company WebSite&nbsp;:&nbsp;</td>
-			                    <td colspan="4">
-			                      <input type="text" class="sick-input" size="30" name="webSite" maxlength="100"> 
-			                      <!--2010-11-10 add by Vintage Yu start -->
-			                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Title&nbsp;:&nbsp; 
-			                      <input type="text" class="sick-input" id="jobTitle" name="jobTitle" size="20" maxlength="100">
-			                      <!--2010-11-10 add by Vintage Yu end -->
-			                    </td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF">
-			                    <td align="right"><font color="#ff0000">*</font>Tel&nbsp;:&nbsp;</td>
-			                    <td align="left" colspan="4"><input name="tel" type="text" class="sick-input" size="18" maxlength="30"></td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF">
-			                    <td align="right"><font color="#ff0000">*</font>E-mail&nbsp;:&nbsp;</td>
-			                    <td colspan="4"><input type="text" class="sick-input" name="email" size="35" maxlength="100"></td>
-			                  </tr>
-			                  <tr bgcolor="#FFFFFF">
-                          <td rowspan="2" align="right" class="desc"><font color="#ff0000">*</font>My Location&nbsp;:&nbsp;</td>
-                          <td colspan="2" valign="middle" align="left">City&nbsp;<input type="text" class="sick-input" name="cityName" size="20" maxlength="100"></td>
-                        </tr>
-                        <tr bgcolor="#FFFFFF">
-                          <td colspan="2" valign="middle" align="left">  
-                              <font color="#ff0000">*</font>Country&nbsp;&nbsp;
-                              <select id="countryId" name="countryId">
-                                  <option value="-1" selected="">Please Select a Country</option>
-                                
+<a name="vepdContact"></a>
+<form name="contactForm" data-parsley-validate data-parsley-excluded="input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden">
+  <input type="hidden" name="real_message" value=""> 
+  <input type="hidden" name="hidWays" value="">
+  <input type="hidden" name="hidAppType" value="">
+  <input id="userType" name="userType" type="hidden" value="8">
+  <input id="txtUserType" name="txtUserType" type="hidden" value="N/A">
+  <input id="appType" name="appType" type="hidden" value="11">
+  <input id="txtAppType" name="txtAppType" type="hidden" value="N/A">
+  <input id="productLine" name="productLine" type="hidden" value="2">
+
+  <table cellspacing="2" cellpadding="2" width="80%" align="center" border="0" class="table">
+    <tbody><tr class="headingcell">
+	<td colspan="5">Write to us&nbsp;:&nbsp;</td>
+      </tr>
+      <tr bgcolor="#FFFFFF" class="boxcontentNew">
+	<td width="17%" align="right" nowrap="nowrap" class="mandatory"><font color="#ff0000">*</font>I need to contact a&nbsp;:&nbsp;</td>
+	<td colspan="4">
+	  <input name="contactId" type="radio" value="1/Sales Contact" checked>Sales Contact&nbsp;
+	  <input name="contactId" type="radio" value="2/Technician Contact" id="contactIdTechnician">Technician Contact&nbsp;
+	</td>
+      </tr>
+      <tr bgcolor="#FFFFFF" class="boxcontentNew">
+        <td width="17%" align="right" nowrap="nowrap"><font color="#ff0000">*</font>How to get<br>this website&nbsp;:&nbsp;</td>
+        <td colspan="4">
+          <input name="howToGetThisWebsite" type="radio" value="369" data-parsley-trigger="change" required><a href="http://www.viaembedded.com/en/images/service/what%20is%20Adwords.jpg" target="blank">Google AdWords</a>&nbsp;
+          <input name="howToGetThisWebsite" type="radio" value="367">Google Search&nbsp;
+          <input name="howToGetThisWebsite" type="radio" value="371">Mte magazine&nbsp;
+          <br>
+          <input name="howToGetThisWebsite" type="radio" value="926">eecatalog.com&nbsp;
+          <input name="howToGetThisWebsite" type="radio" value="374" checked>Others&nbsp;
+          <input name="howToGetThisWebsiteOther" id="howToGetThisWebsiteOther" type="text" class="form-control" value="" maxlength="30" title="Maximum of 30 characters only" data-parsley-conditionalrequired='["[name=\"howToGetThisWebsite\"]:checked", "374"]' data-parsley-validate-if-empty data-parsley-success-class="" data-parsley-conditionalrequired-message='Please specify if you chose "Other"!'/>
+	</td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <td align="right"><font color="#ff0000">*</font>Name&nbsp;:&nbsp;</td>
+        <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>First Name&nbsp;&nbsp;<input type="text" class="sick-input" id="firstName" name="firstName" size="20" maxlength="30" required></td>
+        <td align="right" nowrap="nowrap"><font color="#ff0000">*</font>Last Name&nbsp;&nbsp;<input type="text" class="sick-input" id="lastName" name="lastName" size="25" maxlength="30" required></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+	<td align="right"><font color="#ff0000">*</font>Company Name&nbsp;:&nbsp;</td>
+	<td colspan="4">
+	  <input type="text" class="sick-input" size="25" name="companyName" maxlength="50" required>
+	  &nbsp;Department&nbsp;:&nbsp;<input type="text" class="sick-input" name="department" size="20" maxlength="100">
+	</td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+	<td align="right"><font color="#ff0000">*</font>Company WebSite&nbsp;:&nbsp;</td>
+	<td colspan="4">
+	  <input type="url" class="sick-input" size="30" name="webSite" maxlength="100" > 
+	  <!--2010-11-10 add by Vintage Yu start -->
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Title&nbsp;:&nbsp; 
+	  <input type="text" class="sick-input" id="jobTitle" name="jobTitle" size="20" maxlength="100">
+	  <!--2010-11-10 add by Vintage Yu end -->
+	</td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+	<td align="right"><font color="#ff0000">*</font>Tel&nbsp;:&nbsp;</td>
+	<td align="left" colspan="4"><input name="tel" type="text" class="sick-input" size="18" maxlength="30" required></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+	<td align="right"><font color="#ff0000">*</font>E-mail&nbsp;:&nbsp;</td>
+	<td colspan="4"><input type="email" name="email" size="35" maxlength="100" data-parsley-trigger="change" required></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <td rowspan="2" align="right" class="desc"><font color="#ff0000">*</font>My Location&nbsp;:&nbsp;</td>
+        <td colspan="2" valign="middle" align="left">City&nbsp;<input type="text" class="sick-input" name="cityName" size="20" maxlength="100"></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <td colspan="2" valign="middle" align="left">  
+          <font color="#ff0000">*</font>Country&nbsp;&nbsp;
+          <select id="countryId" name="countryId" required>
                                   <option value="4/Albania">Albania</option>
                                 
                                   <option value="5/Algeria">Algeria</option>
@@ -845,7 +816,8 @@ Please fill in the form below to contact us.
                               <option value="vmpc vm7700 (EOL)/891" style="background-color:#EDEDED;">vmpc vm7700 (EOL)</option>
 			                        
 			                      </select> &nbsp;or fill in other&nbsp;:&nbsp;
-			                      <input type="text" id="txtInProductModel" name="txtInProductModel" maxlength="200"> <br>
+			                      <input type="text" id="txtInProductModel" name="txtInProductModel" maxlength="200"
+						      data-parsley-conditionalrequired='["[name=\"mb\"]", "-1"]' data-parsley-validate-if-empty data-parsley-success-class="" data-parsley-conditionalrequired-message="Please specify if you did not choose from the list!"> <br>
 			                    </td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF">
@@ -855,7 +827,7 @@ Please fill in the form below to contact us.
                                 
                                     <tbody><tr>
                                       <td align="left" width="27%" colspan="1">
-                                        <input value="1" type="checkbox" name="AppType" id="AppType1">
+                                        <input value="1" type="checkbox" name="AppType" id="AppType1" data-parsley-mincheck="1" required>
                                         Digital Signage
                                       </td>
                                 
@@ -961,9 +933,9 @@ Please fill in the form below to contact us.
                                 
                                       </tr><tr>
                                       <td align="left" width="27%" colspan="2">
-                                        <input value="11" type="checkbox" name="AppType" onclick="document.form1.AppType_text11.focus();">
+                                        <input value="11" type="checkbox" name="AppType" id="AppTypeOther">
                                         Other :&nbsp; 
-                                        <input class="sick-input" type="text" id="AppType_text11" maxlength="40" name="AppType_text11" size="30%" value="">
+                                        <input class="sick-input" type="text" id="AppType_text11" maxlength="40" name="AppType_text11" size="30%" value="" data-parsley-conditionalchecked='AppTypeOther' data-parsley-validate-if-empty data-parsley-success-class="" data-parsley-conditionalchecked-message='Please specify if you selected "Other"!'>
                                       </td>
                                 
                                     
@@ -979,37 +951,37 @@ Please fill in the form below to contact us.
 			                  <tr bgcolor="#FFFFFF" class="hidden" id="showBoughtFromInfo">
 			                    <td align="right"><font color="#ff0000">*</font>I bought it from?&nbsp;:&nbsp;</td>
 			                    <td colspan="4">
-			                      <input type="text" class="sick-input" name="boughtFrom"><br>
+			                      <input type="text" class="sick-input" name="boughtFrom" required><br>
 			                      <font color="red" size="1">Please specify a distributor or retailer or you might not buy it yet, please fill in "N/A".</font>
 			                    </td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF" class="hidden" id="showcpuInfo">
 			                    <td align="right"><font color="#ff0000">*</font>CPU&nbsp;:&nbsp;</td>
-			                    <td colspan="4"><input type="text" class="sick-input" name="cpu"></td>
+			                    <td colspan="4"><input type="text" class="sick-input" name="cpu" required></td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF" class="hidden" id="showosInfo">
 			                    <td align="right"><font color="#ff0000">*</font>OS&nbsp;:&nbsp;</td>
-			                    <td colspan="4"><input type="text" class="sick-input" name="os"></td>
+			                    <td colspan="4"><input type="text" class="sick-input" name="os" required></td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF" class="hidden" id="showmemInfo">
 			                    <td align="right"><font color="#ff0000">*</font>Memory&nbsp;:&nbsp;</td>
-			                    <td colspan="4">Brand&nbsp; <input type="text" class="sick-input" name="memBrand">&nbsp;&nbsp; Speed&nbsp; <input type="text" class="sick-input" name="memSpeed"></td>
+			                    <td colspan="4">Brand&nbsp; <input type="text" class="sick-input" name="memBrand" required>&nbsp;&nbsp; Speed&nbsp; <input type="text" class="sick-input" name="memSpeed" required></td>
 			                  </tr>
 			                  <tr bgcolor="#FFFFFF" class="hidden" id="showvideoInfo">
 			                    <td align="right"><font color="#ff0000">*</font>Video card&nbsp;:&nbsp;</td>
-			                    <td colspan="4"><input type="text" class="sick-input" name="video"></td>
+			                    <td colspan="4"><input type="text" class="sick-input" name="video" required></td>
 			                  </tr>
 			                  <!-- For Technical Contact End Here -->
 			                  <tr bgcolor="#FFFFFF">
 			                    <td align="right" valign="top" class="desc"><font color="#ff0000">*</font>Message&nbsp;:&nbsp; <br></td>
-			                    <td colspan="4"><textarea name="message" class="sick-input" style="width:98%;" cols="55" rows="5" wrap="off"></textarea></td>
+			                    <td colspan="4"><textarea name="message" class="sick-input" style="width:98%;" cols="55" rows="5" wrap="off" required data-parsley-minwords="200"></textarea></td>
 			                  </tr>
 			                </tbody></table>
 			                <table width="100%">
 			                  <tbody><tr align="center">
 			                    <td width="30"></td>
 			                    <td>
-			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="submit" value="Submit">&nbsp; 
+			                      <input name="button" type="submit" class="btn_basic btn_solid btn_blue" id="submit" value="Submit">&nbsp; 
 			                      <input name="button" type="button" class="btn_basic btn_solid btn_blue" id="reset" onclick="javascript:document.form1.reset();" value="Clear"></td>
 			                  </tr>
 			                </tbody></table>
@@ -1083,16 +1055,16 @@ Please fill in the form below to contact us.
 		</footer><!-- #colophon -->
 	</div><!-- #main -->
 </div><!-- #footer-row -->
-
 <script type="text/javascript" src="./Contact_files/jquery.slides.min.js"></script>
 <script type="text/javascript" src="./Contact_files/slider.js"></script>
 <script type="text/javascript" src="./Contact_files/navigation.js"></script>
 <script type="text/javascript" src="./Contact_files/skip-link-focus-fix.js"></script>
+<script type="text/javascript" src="./js/contact.js"></script>
+<script type="text/javascript" src="./js/lib/parsley.min.js"></script>
 
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="http://viaembedded.staging.wpengine.com/wp-content/themes/viaembedded/style-ie.css"></script>
 <![endif]-->
 
 
-
-<a href="javascript:void(0);" title="SumoMe" style="position: fixed; z-index: 10000000000; padding: 0px; width: 44px; height: 40px; text-indent: -10000px; display: block !important; top: 40px; right: -40px; background-image: url(http://d2hpw6pw4uian4.cloudfront.net/static/528f42a0215644fef5a8c9ed0642a587c47c2eda/client/images/control-apps.png); background-color: rgb(15, 82, 186); background-position-x: 4px; background-repeat: no-repeat;"></a><div class="sumome-share-client-wrapper sumome-share-client-wrapper-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium" style="top: 158.5px;"><div class="sumome-share-client-show"><span></span></div><div class="sumome-share-client sumome-share-client-left-page sumome-share-client-counts sumome-share-client-light sumome-share-client-medium"><div class="sumome-share-client-share sumome-share-client-share-share sumome-share-client-count" data-sumome-share="share" style="color: rgb(0, 0, 0); background: transparent;"><span>Shares</span></div><a title="Facebook" class="sumome-share-client-share" data-sumome-share="facebook" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(59, 89, 152);"><img src="./Contact_files/facebook-white-60.png"></a><a title="Facebook Like" class="sumome-share-client-share" data-sumome-share="facebooklike" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(90, 115, 157);"><img src="./Contact_files/facebooklike-white-60.png"></a><a title="Twitter" class="sumome-share-client-share" data-sumome-share="twitter" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(0, 172, 237);"><img src="./Contact_files/twitter-white-60.png"></a><a title="Google+" class="sumome-share-client-share" data-sumome-share="googleplus" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(221, 75, 57);"><img src="./Contact_files/googleplus-white-60.png"></a><a title="Email" class="sumome-share-client-share" data-sumome-share="email" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(170, 170, 170);"><img src="./Contact_files/email-white-60.png"></a><a title="SumoMe" class="sumome-share-client-share" data-sumome-share="sumome" href="javascript:void(0);" style="color: rgb(255, 255, 255); background: rgb(15, 82, 186);"><img src="./Contact_files/sumome-white-60.png"></a></div><div class="sumome-share-client-hide" style="display: none;"><span></span></div></div></body></html>
+</body></html>

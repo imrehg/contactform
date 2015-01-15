@@ -105,6 +105,35 @@ VIA Embedded Contact Form
             target.append('<input type="hidden" id="hidStateExistFlg" name="hidStateExistFlg" value="1">');
         };
 
+    // Validation
+    window.ParsleyConfig = {
+        validators: {
+            conditionalrequired: {
+                fn: function (value, requirements) {
+                    // if requirements[0] value does not meet requirements[1] expectation, field is required
+                    if (requirements[1] === $(requirements[0]).val() && '' === value)
+                        return false;
+                    
+                    return true;
+                },
+                priority: 32
+            },
+            conditionalchecked: {
+                fn: function (value, checkboxId) {
+                    // if requirements[0] value does not meet requirements[1] expectation, field is required
+                    console.log("Checked");
+                    console.log($('#' + checkboxId + ':checked'));
+                    if ($('#' + checkboxId + ':checked').length > 0 && '' === value) {
+                        return false;
+                    } else {
+                        return true;
+                    }
+                },
+                priority: 33
+            }
+        }
+    };
+    
     $(document).ready(function () {
 
         // Visibility of States, Provinces
@@ -153,22 +182,21 @@ VIA Embedded Contact Form
             // See: http://stackoverflow.com/questions/3861307/jqueryui-button-remains-pressed-after-opening-ui-dialog-with-it-in-firefox
             $(this).removeClass("ui-state-focus ui-state-hover");
             
-            var firstName = $('#firstName');
-            if ($.trim(firstName.val()).length < 1) {
-                $('body').scrollTop(firstName.offset().top);
-                alert("Please fill in your first name!");
-                return;
-            }
+            // var firstName = $('#firstName');
+            // if ($.trim(firstName.val()).length < 1) {
+            //     $('body').scrollTop(firstName.offset().top);
+            //     alert("Please fill in your first name!");
+            //     return;
+            // }
 
-            var lastName = $('#lastName');
-            if ($.trim(firstName.val()).length < 1) {
-                $('body').scrollTop(firstName.offset().top);
-                alert("Please fill in your last name!");
-                return;
-            }
+            // var lastName = $('#lastName');
+            // if ($.trim(firstName.val()).length < 1) {
+            //     $('body').scrollTop(firstName.offset().top);
+            //     alert("Please fill in your last name!");
+            //     return;
+            // }
             
         });
     });
 
 }(jQuery));
-
