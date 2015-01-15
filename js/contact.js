@@ -175,6 +175,29 @@ VIA Embedded Contact Form
             });
         });
 
+        $('#contactForm').parsley().subscribe('parsley:form:validate', function (formInstance) {
+
+            if (formInstance.isValid()) {
+                alert("Yay, a valid form!");
+            }
+            formInstance.submitEvent.preventDefault();
+            return;
+            // // if one of these blocks is not failing do not prevent submission
+            // // we use here group validation with option force (validate even non required fields)
+            // if (formInstance.isValid('block1', true) || formInstance.isValid('block2', true)) {
+            //     $('.invalid-form-error-message').html('');
+            //     return;
+            // }
+            // // else stop form submission
+            // formInstance.submitEvent.preventDefault();
+            
+            // // and display a gentle message
+            // $('.invalid-form-error-message')
+            //     .html("You must correctly fill the fields of at least one of these two blocks!")
+            //     .addClass("filled");
+            // return;
+        });
+        
         // Validation
         $('#submit').click(function () {
 

@@ -108,7 +108,7 @@ Whether you're a reseller looking for opportunities to sell our products or a co
 Please fill in the form below to contact us.
 
 <a name="vepdContact"></a>
-<form name="contactForm" data-parsley-validate data-parsley-excluded="input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden">
+<form name="contactForm" id="contactForm" data-parsley-validate data-parsley-excluded="input[type=button], input[type=submit], input[type=reset], input[type=hidden], [disabled], :hidden">
   <input type="hidden" name="real_message" value=""> 
   <input type="hidden" name="hidWays" value="">
   <input type="hidden" name="hidAppType" value="">
@@ -132,7 +132,7 @@ Please fill in the form below to contact us.
       <tr bgcolor="#FFFFFF" class="boxcontentNew">
         <td width="17%" align="right" nowrap="nowrap"><font color="#ff0000">*</font>How to get<br>this website&nbsp;:&nbsp;</td>
         <td colspan="4">
-          <input name="howToGetThisWebsite" type="radio" value="369" data-parsley-trigger="change" required><a href="http://www.viaembedded.com/en/images/service/what%20is%20Adwords.jpg" target="blank">Google AdWords</a>&nbsp;
+          <input name="howToGetThisWebsite" type="radio" value="369" required><a href="http://www.viaembedded.com/en/images/service/what%20is%20Adwords.jpg" target="blank">Google AdWords</a>&nbsp;
           <input name="howToGetThisWebsite" type="radio" value="367">Google Search&nbsp;
           <input name="howToGetThisWebsite" type="radio" value="371">Mte magazine&nbsp;
           <br>
@@ -156,7 +156,7 @@ Please fill in the form below to contact us.
       <tr bgcolor="#FFFFFF">
 	<td align="right"><font color="#ff0000">*</font>Company WebSite&nbsp;:&nbsp;</td>
 	<td colspan="4">
-	  <input type="url" class="sick-input" size="30" name="webSite" maxlength="100" > 
+	  <input type="url" class="sick-input" size="30" name="webSite" maxlength="100" data-parsley-trigger="change" > 
 	  <!--2010-11-10 add by Vintage Yu start -->
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Job Title&nbsp;:&nbsp; 
 	  <input type="text" class="sick-input" id="jobTitle" name="jobTitle" size="20" maxlength="100">
@@ -974,7 +974,7 @@ Please fill in the form below to contact us.
 			                  <!-- For Technical Contact End Here -->
 			                  <tr bgcolor="#FFFFFF">
 			                    <td align="right" valign="top" class="desc"><font color="#ff0000">*</font>Message&nbsp;:&nbsp; <br></td>
-			                    <td colspan="4"><textarea name="message" class="sick-input" style="width:98%;" cols="55" rows="5" wrap="off" required data-parsley-minwords="200"></textarea></td>
+			                    <td colspan="4"><textarea name="message" class="sick-input" style="width:98%;" cols="55" rows="5" wrap="off" required data-parsley-minlength="20" data-parsley-error-message="Please add your message!"></textarea></td>
 			                  </tr>
 			                </tbody></table>
 			                <table width="100%">
